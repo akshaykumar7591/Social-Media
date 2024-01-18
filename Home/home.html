@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+    <title> Social Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">Social Media</h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for creators, inspirations and projects" />
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <button class="btn btn-primary " id="signIn"> Login/Sign Up</button>
+                <button class="btn btn-primary " id="signOut"> Logout</button>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-pic pic">
+                        <input type="file" accept="image/jpeg , image/png , image/jpg" id="uploadpicture">
+                        
+                        <img src="" alt="AddPhoto" class="profilePhoto">
+                    </div>
+                    <div class="handle">
+                        <h4 id="userName">Akshay Kumar</h4>
+                        <!-- <p class="text-muted">@akshay</p> -->
+                    </div>
+                </a>
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-compass"></i></span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span>
+                        <h3>Notifications</h3>
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-pic">
+                                    <img src="../image/profile-10.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Abigail Willey</b> accepted your friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-pic">
+                                    <img src="../image/profile-11.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Varun Nair</b> commented on your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-pic">
+                                    <img src="../image/profile-12.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Marry Opmong</b> and 210 other liked your post
+                                    <small class="text-muted">4 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-pic">
+                                    <img src="../image/profile-13.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Wilson Fisk</b> started following you
+                                    <small class="text-muted"> 11 HOURS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu-item" id="messages-notifications">
+                        <i class="uil uil-envelope"><small class="notification-count">6</small></i></span>
+                        <h3>Messages</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-bookmark"></i></span>
+                        <h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-analytics"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-palette"></i></span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item ">
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+
+                    <label class="btn btn-primary" for="create-post">Create Post</label>
+                </div>
+            </div>
+
+
+            <!--   post create -->
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="../image/profile-8.jpg" alt="" class="profilePhoto">
+                        </div>
+                        <p class="name">Your Story </p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="../image/profile-9.jpg" alt="">
+                        </div>
+                        <p class="name">Lilla James</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="../image/profile-2.jpg" alt="">
+                        </div>
+                        <p class="name">Jasmine Singh</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="../image/profile-3.jpg" alt="">
+                        </div>
+                        <p class="name">Celina Fernandes</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="../image/profile-4.jpg" alt="">
+                        </div>
+                        <p class="name">Mia Addams</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <img src="../image/profile-5.jpg" alt="">
+                        </div>
+                        <p class="name">Christy Kahea</p>
+                    </div>
+                </div>
+
+                <div id="main-body">
+                    <div class="inside">
+
+                        <div class="post">
+                            <div class="postQ">
+                                <div id="profile">
+                                    <img src="../image/feed-7.jpg" alt="Avatar22" width="65px" height="60px"
+                                        class="profilePhoto" />
+                                </div>
+                                <div class="mind">What's on your mind, Lucy?</div>
+                            </div>
+                            <!-- <hr> -->
+                            <div class="choice">
+                                <div class="video category">
+                                    <img height="24" width="24" alt="" referrerpolicy="origin-when-cross-origin"
+                                        src="https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/v1iF2605Cb5.png" />
+                                    <p>Video</p>
+                                </div>
+                                <div class="photo category">
+                                    <img height="24" width="24" alt="" referrerpolicy="origin-when-cross-origin"
+                                        src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/a6OjkIIE-R0.png" />
+                                    <p>Photo</p>
+                                </div>
+                                <div class="feeling category">
+                                    <img height="24" width="24" alt="" referrerpolicy="origin-when-cross-origin"
+                                        src="https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/yMDS19UDsWe.png" />
+                                    <p>Feeling/activity</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- create post -->
+                        <div class="addPost activePost">
+                            <div class="create">
+                                <p>Create post</p>
+                                <div class="cro">
+                                    <i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="
+                                background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/L1k-kkbTA1u.png');
+                                background-position: 0px -110px;
+                                background-size: 190px 182px;
+                                width: 20px;
+                                height: 20px;
+                                background-repeat: no-repeat;
+                                display: inline-block;
+                              "></i>
+                                </div>
+                            </div>
+                            <div class="introduction">
+                                <div class="infor">
+                                    <div id="profile">
+                                        <img src="../image/profile-1.jpg" alt="Avatar" width="60px" height="60px"
+                                            class="profilePhoto" />
+                                    </div>
+                                    <div class="choose">
+                                        <p class="post-name">Username</p>
+
+                                        <div>
+                                            <select style="
+                                    width: 100px;
+                                    border: none;
+                                    padding: 3px 10px;
+                                    background-color: gainsboro;
+                                    border-radius: 10px;
+                                  ">
+                                                <option style="
+                                      background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/L1k-kkbTA1u.png);
+                                    " value="0">
+                                                    Friends
+                                                </option>
+                                                <option value="1">Public</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- text area -->
+                                
+                                <textarea style="border: none; resize: none; width: 100%" name="abc" id="txt" rows="3"
+                                    placeholder="what's in your mind"></textarea>
+
+                                <!-- add photos / videos -->
+                                <label for="post-picture">
+                            
+                                    <div class="upload-photo">
+                                        <img src="" alt="420" class="post-pic disableImg" />
+
+                                        <div class="noPic">
+                                            <div class="double">
+                                                <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" style="
+                                    background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/9oLIQ46ecpP.png');
+                                    background-position: 0px -64px;
+                                    background-size: 38px 122px;
+                                    width: 20px;
+                                    height: 20px;
+                                    background-repeat: no-repeat;
+                                    display: inline-block;"></i>
+                                            </div>
+                                            <p>Add Photos/Videos</p>
+
+                                        </div>
+                                    
+                                        <input src="" type="file" accept="image/jpeg , image/png , image/jpg" name="images" id="post-picture">
+                                    
+                                       </div>
+                                </label>
+                                <!-- add to you post -->
+                                <div class="collect">
+                                    <p>Add to your post</p>
+                                    <div class="collection">
+                                        <label for="post-picture">
+                                            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/a6OjkIIE-R0.png"
+                                                alt="" />
+                                        </label>
+
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/MqTJr_DM3Jg.png"
+                                            alt="" />
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/yMDS19UDsWe.png"
+                                            alt="" />
+                                    </div>
+                                </div>
+                                <!-- post -->
+                                <button type="submit" class="posted disable">Post</button>
+                          
+                            </div>
+                        </div>
+
+                        <!-- new pic -->
+                        <div class="inside2" id="posts-container">
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="../image/profile-14.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Lana</h3>
+                                <small>Dubai, 15 MINUTES AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+
+                        <div class="photo">
+                            <img src="../image/feed-1.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="../image/profile-15.jpg"></span>
+                            <span><img src="../image/profile-16.jpg"></span>
+                            <span><img src="../image/profile-17.jpg"></span>
+                            ,<p>Liked by <b>Enrest Achiever</b>snd <b>220 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Lana Rose</b>Lorem ipsum dolor storiesquiquam eius.
+                                <span class="hash-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 130 comments</div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="../image/profile-15.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Chris Brown</h3>
+                                <small>New York, 1 HOUR AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+
+                        <div class="photo">
+                            <img src="../image/feed-2.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="../image/profile-2.jpg"></span>
+                            <span><img src="../image/profile-4.jpg"></span>
+                            <span><img src="../image/profile-6.jpg"></span>
+                            ,<p>Liked by <b>Enrest Achiever</b>snd <b>188 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Chirs Brown</b>Lorem ipsum dolor storiesquiquam eius.
+                                <span class="hash-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 40 comments</div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="../image/profile-16.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>John Samron</h3>
+                                <small>Amsterdam, 7 HOURS AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+
+                        <div class="photo">
+                            <img src="../image/feed-3.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="../image/profile-3.jpg"></span>
+                            <span><img src="../image/profile-5.jpg"></span>
+                            <span><img src="../image/profile-7.jpg"></span>
+                            ,<p>Liked by <b>Enrest Achiever</b>snd <b>130 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>John Samron</b>Lorem ipsum dolor storiesquiquam eius.
+                                <span class="hash-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 15 comments</div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="../image/profile-17.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Kareena Joshua</h3>
+                                <small>USA, 3 HOURS AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+
+                        <div class="photo">
+                            <img src="../image/feed-4.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="../image/profile-8.jpg"></span>
+                            <span><img src="../image/profile-10.jpg"></span>
+                            <span><img src="../image/profile-12.jpg"></span>
+                            ,<p>Liked by <b>Enrest Achiever</b>snd <b>280 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Kareena Joshua</b>Lorem ipsum dolor storiesquiquam eius.
+                                <span class="hash-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 110 comments</div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="../image/profile-18.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Dan Smith</h3>
+                                <small>Paris, 1 DAY AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+
+                        <div class="photo">
+                            <img src="../image/feed-5.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="../image/profile-9.jpg"></span>
+                            <span><img src="../image/profile-11.jpg"></span>
+                            <span><img src="../image/profile-13.jpg"></span>
+                            ,<p>Liked by <b>Enrest Achiever</b>snd <b>420 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Dan Smith</b>Lorem ipsum dolor storiesquiquam eius.
+                                <span class="hash-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 120 comments</div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="../image/profile-19.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Karim Benzema</h3>
+                                <small>Mumbai, 30 MINUTES AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+
+                        <div class="photo">
+                            <img src="../image/feed-6.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="../image/profile-15.jpg"></span>
+                            <span><img src="../image/profile-14.jpg"></span>
+                            <span><img src="../image/profile-17.jpg"></span>
+                            ,<p>Liked by <b>Enrest Achiever</b>snd <b>150 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Karim Benzema</b>Lorem ipsum dolor storiesquiquam eius.
+                                <span class="hash-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 30 comments</div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+
+                        </div>
+                        <div class="user">
+                            <div class="profile-pic">
+                                <img src="../image/profile-20.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h3>Srishti Tirkey</h3>
+                                <small>Bangalore, 11 HOURS AGO</small>
+                            </div>
+                            <SPAN class="edit"><i class="uil uil-ellipsis-h"></i></SPAN>
+                        </div>
+
+                        <div class="photo">
+                            <img src="../image/feed-7.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-button">
+                                <span><i class="uil uil-thumbs-up"></i></span>
+                                <span><i class="uil uil-comment"></i></span>
+                                <span><i class="uil uil-share"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="../image/profile-15.jpg"></span>
+                            <span><img src="../image/profile-13.jpg"></span>
+                            <span><img src="../image/profile-10.jpg"></span>
+                            ,<p>Liked by <b>Enrest Achiever</b>snd <b>530 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Srishti Tirkey</b>Lorem ipsum dolor storiesquiquam eius.
+                                <span class="hash-tag">#lifestyle</span>
+                            </p>
+                        </div>
+                        <div class="comments text-muted">View all 190 comments</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <span><i class="uil uil-edit"></i></span>
+                    </div>
+
+                    <div class="search-bar">
+                        <span><i class="uil uil-search"></i></span>
+                        <input type="search" placeholder="Search Messages" id="message-search">
+                    </div>
+
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="../image/profile-17.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Kareena Joshua</h5>
+                            <p class="text-muted">Just woke up bruh..</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="../image/profile-18.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Dan Smith</h5>
+                            <p class="text-bold">2 New Messages</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="../image/profile-15.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Chris Brown</h5>
+                            <p class="text-muted">Lol u right</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="../image/profile-14.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Lana Rose</h5>
+                            <p class="text-bold">Birthday tomorrow!!</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="../image/profile-11.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Varun Nair</h5>
+                            <p class="text-muted">Ssup?</p>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="profile-pic">
+                            <img src="../image/profile-1.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Jahnvi Doifode</h5>
+                            <p class="text-bold">3 New Messages</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="../image/profile-13.jpg">
+                            </div>
+                            <div>
+                                <h5>Wilson Fisk</h5>
+                                <p class="text-muted">8 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" onclick="accept()">Accept</button>
+                            <button class="btn" onclick="decline()">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="../image/profile-20.jpg">
+                            </div>
+                            <div>
+                                <h5>Srishti Tirkey</h5>
+                                <p class="text-muted">2 mutual friends</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" onclick="accept()">Accept</button>
+                            <button class="btn" onclick="decline()">Decline</button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pic">
+                                <img src="../image/profile-5.jpg">
+                            </div>
+                            <div>
+                                <h5>Christ Kahea</h5>
+                                <p class="text-muted">1 mutual friend</p>
+
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary" onclick="accept()">Accept</button>
+                            <button class="btn" onclick="decline()">Decline</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <script  src="home.js"></script>
+    <script  src="post.js"></script>
+</body>
+
+</html>
